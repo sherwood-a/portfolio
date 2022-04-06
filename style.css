@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/**************** Sections ****************/
+
+.section-2,.section-3,.section-4,
+.section-5,.section-6,.section-7,.section-8{
+    margin-top: 204px;
+}
+
+
+
+
+
+/**************** For JS ****************/
+
+.hidden{
+    display: none!important;
+}
+
+
+
+
+
+/**************** Text ****************/
+
+h2{
+    font-family: 'Khula', sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h5{
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.yellow{
+    color: #FAC831;
+}
+
+.hover:hover{
+    color: #FAC831;
+}
+
+
+
+
+/**************** Buttons ****************/
+
+.button-yellow{
+    color: white;
+    background-color: #FAC831;
+    padding: .5em 3em;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-yellow:hover{
+    color: #FAC831;
+    background-color: white;
+    outline: 1px solid #FAC831;
+}
+
+.button-yellow:active{
+    color: #FAC831;
+    background-color: white;
+    border: 1px solid #FAC831;
+}
+
+
+
+
+
+/**************** Header ****************/
+
+.header-1{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: fit-content;
+}
+
+.nav-list{
+    background-color: #FAC831;
+    border-radius: 0 0 15px 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 2em 1.5em 1.5em 1.5em;
+    width: fit-content;
+    color: white;
+}
+
+.li-header{
+    font-size: 1.2em;
+    margin-left: 1.3em;
+}
+
+.li-header:first-child{
+    margin: 0;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+/**************** Header-HIDDEN-MENU ****************/
+
+.hidden-menu{
+    display: none;
+}
+
+.burger-menu-hover{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    background-color: rgba(250, 200, 49, 0.961);
+    color: white;
+    font-size: 7vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.close-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.list-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-hidden-menu{
+    display: flex;
+    flex-direction: column;
+    margin: 30% 40%;
+}
+
+.ul-hidden-menu-item{
+    margin-top: 7vw;
+}
+
+.hidden-menu-item{
+    font-family: inherit;
+    position: relative;
+}
+
+.hidden-menu-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    transition: all .4s ease-in-out;
+}
+
+li:hover .hidden-menu-item::after{
+    width: 100%;
+    left: 0;
+}
+
+
+/**************** Headings ****************/
+
+.heading-container{
+    /* border: 1px red solid; */
+    width: fit-content;
+    margin: 7% auto;
+}
+
+.heading-inner-container{
+    display: flex;
+}
+
+.heading{
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: -4%;
+    margin-left: -6%;
+}
+
+.h2-section-7{
+    margin: unset;
+}
+
+
+/**************** Section-1 ****************/
+
+.section-1-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.section-1-background-mob{
+    display: none;
+}
+
+.section-1-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10em;
+}
+
+.section-1-container > * {
+    margin-top: 6%;
+}
+
+.section-1-container > *:first-child {
+    margin-top: 0;
+}
+
+.illustration-section-1{
+    width: 40vw;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.button-link{
+    font-family: inherit;
+    position: relative;
+}
+
+.button-link::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: #FAC831;
+    transition: all .4s ease-in-out;
+}
+
+.button-conteiner:hover .button-link::after{
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+/**************** Section-2 ****************/
+
+.a-portfolio-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .portfolio-items-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.portfolio-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 27%;
+    height: 428px;
+    border-radius: 30px;
+}
+
+.portfolio-item > *{
+    margin-top: 7%;
+}
+
+.portfolio-item > *:last-child{
+    position: absolute;
+    bottom: 1.5em;
+}
+
+.portfolio-text{
+    text-align: center;
+    padding: 0 40px;
+}
+
+
+/**************** Section-3 ****************/
+
+.section-3-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-3-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section-3-text{
+    padding-top: 3%;
+    padding-left: 31%;
+}
+
+.illustration-section-3{
+    width: 30vw;
+}
+
+
+
+
+/**************** Section-4 ****************/
+
+.section-4-text-container > * {
+    margin-top: 2em;
+}
+
+
+.section-4-text-container > *:first-child {
+    margin-top: 0;
+}
+
+.section-4-text{
+    margin-left: 100px;
+    width: 25vw;
+}
+
+
+
+
+/**************** Section-5 ****************/
+
+.gray{
+    font-size: 2.5em;
+    color: #878787;
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.tools-icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+
+
+/**************** Section-6 ****************/
+
+
+.slider-items-contanier{
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 7% 20%;
+    border-radius: 30px;
+    height: 650px;
+}
+
+.carousel-cell {
+    width: 33%;
+    height: 800px;
+    margin-right: 30px;
+  }
+  .carousel-cell.size-180 { width: 180px; }
+  .carousel-cell.size-large { width: 75%; }
+
+/* .container{
+  border: 1px solid red;
+} */
+
+
+/**************** flickity ****************/
+
+
+.flickity-button-icon {
+    fill: #FAC831;
+  }
+
+  /* no circle */
+.flickity-button {
+    background: transparent;
+  }
+
+  .flickity-button:hover {
+    background: unset;
+  }
+
+  /* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid #FAC831;
+  }
+
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: #FAC831;
+  }
+  
+.slider-items-contanier > *{
+    margin-top: 15px;
+    text-align: center;
+} 
+
+.experience-items{
+    text-align: unset;
+}
+
+.experience-items >*{
+    padding-top: 5%;
+}
+
+
+/**************** Section-7 ****************/
+
+.form-section-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.form > *{
+    margin-top: 10%;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1-and-2-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+} 
+
+
+.form-1-and-2-container > *{
+    width: 47%;
+}
+
+.input-itself{
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    padding: 0 .7em;
+}
+
+input, textarea, button{
+    all: unset;
+}
+
+.label{
+    font-size: .9em;
+    color: #878787;
+    margin-left: 40px;
+    font-weight: 100;
+}
+
+.textarea{
+    height: 200px;
+    padding: .7em;
+}
+
+button{
+    cursor: pointer;
+}
+
+.illustration-section-7{
+    width: 30vw;
+}
+
+.input-itself:focus,
+.textarea:focus{
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/**************** Section-8 ****************/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+}
+
+.contact > *{
+    margin-top: 20px;
+}
+
+.contact > *:first-child{
+    margin-top: none;
+}
+
+.h2-section-8{
+    margin-bottom: .1em;
+}
+
+.social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.social-media-container > *{
+    padding: 10px 20px;
+}
+
+.h3-section-7{
+    font-size: 2em;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.social-media:hover{
+    width: 90%;
+}
+
+
+
+
+                    /********************************/
+                    /********************************/
+/**************** index-graphic-design-portfolio.html ****************/
+                    /********************************/
+                    /********************************/
+
+
+
+/**************** Overlay pic ****************/
+
+.overlay-pics-hidden{
+    display: none;
+}
+
+.closeBtn{
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    z-index: 10;
+}
+
+.overlay { 
+    position: fixed; 
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+    top: 0; right: 0; bottom: 0; left: 0; 
+    background-color: #000000b4; 
+    text-align: center;
+}
+
+/**************** Header-2 ****************/
+
+.header-2{
+    margin-top: 3%;
+    /* border: 1px solid red; */
+}
+ 
+.button-back{
+    display: flex;
+    align-items: center;
+}
+
+.button-back-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.text-back{
+    margin-left: 10px;
+}
+
+/**************** body ****************/
+
+.portfolio-item-container-outer{
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+.portfolio-item-container-outer:hover{
+    outline: #FAC831 1px solid;
+}
+
+
+.text-conteiner-1{
+    margin-left: 10%;
+}
+
+.text-conteiner-1>*{
+    padding-top: 3%;
+}
+
+.text-item{
+    padding-top: 10%;
+}
+
+.section-8-2 {
+    position: relative;
+    bottom: 100px;
+}
+
+.background-pic-1{
+    position: absolute;
+    z-index: -1;
+}
+
+.background-pic-top{
+    top: 0;
+    right: 0;
+}
+
+.background-pic-bottom{
+    bottom: 0;
+    left: 0;
+}
