@@ -283,6 +283,10 @@ li:hover .hidden-menu-item::after{
 
 /**************** Section-2 ****************/
 
+.section-2{
+    padding-top: 154px;
+}
+
 .a-portfolio-items{
     display: flex;
     justify-content: center;
