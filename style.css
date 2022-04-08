@@ -22,7 +22,7 @@ body{
 
 .section-2,.section-3,.section-4,
 .section-5,.section-6,.section-7,.section-8{
-    margin-top: 204px;
+    margin-top: 128px;
 }
 
 
@@ -97,9 +97,6 @@ a{
     background-color: white;
     border: 1px solid #FAC831;
 }
-
-
-
 
 
 /**************** Header ****************/
@@ -280,8 +277,11 @@ li:hover .hidden-menu-item::after{
 
 
 
-
 /**************** Section-2 ****************/
+
+/* .section-2{
+    padding-top: 154px;
+} */
 
 .a-portfolio-items{
     display: flex;
