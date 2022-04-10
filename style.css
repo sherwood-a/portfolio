@@ -603,6 +603,10 @@ button{
     text-align: center;
 }
 
+.overlay-pic{
+    width: 80vw;
+}
+
 /**************** Header-2 ****************/
 
 .header-2{
