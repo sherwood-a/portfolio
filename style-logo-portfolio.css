@@ -5,11 +5,12 @@
 
 .pics-container-outer{
     margin: 3% auto;
-   text-align: center;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
 /* HOVER EFFECT */
@@ -24,6 +25,7 @@
 .pics-container img{
     display: block;
 	transition: all 0.4s ease-in-out;
+    max-width: 100%;
 }
 
 .pics-container:hover img{

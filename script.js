@@ -22,3 +22,18 @@ function hiddenMenu() {
   hidden.classList.toggle("burger-menu-hover");
   hamburgerMenu.classList.toggle("hidden");
 }
+
+
+/////////////// Click on div ///////////////
+
+const divContainer = document.querySelector('.portfolio-items-container');
+
+divContainer.addEventListener(`click`, clickChildrenA);
+
+function clickChildrenA(event) {
+  // debugger
+ var aSelector = event.target.querySelector('a');
+ if(aSelector) {
+  aSelector.click();
+ }
+}

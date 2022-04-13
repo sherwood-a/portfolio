@@ -1,5 +1,5 @@
 @media(max-width: 1100px){
-    .portfolio-item-container-outer{
+    .portfolio-item-containers{
         display: flex;
         flex-direction: column;
         align-items: center;
