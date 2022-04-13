@@ -632,7 +632,7 @@ button{
 
 /**************** body ****************/
 
-.portfolio-item-container-outer{
+.portfolio-item-containers{
     display: flex;
     align-items: center;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
@@ -641,7 +641,7 @@ button{
     padding: 3%;
 }
 
-.portfolio-item-container-outer:hover{
+.portfolio-item-containers:hover{
     outline: #FAC831 1px solid;
 }
 
