@@ -8,7 +8,7 @@
 const outerDiv = document.querySelectorAll(`.portfolio-item-container-outer`);   
 
 // Close btn and overlay container
-const closeBtn = document.querySelector(`.closeBtn`);
+const closeBtn1 = document.querySelector(`.closeBtn`);
 const overlays = document.querySelectorAll(`.overlay`);
 
 // Variable that will contain overlay once button is clicked and catch id of this btn
@@ -29,7 +29,7 @@ for (var i = 0; i < outerDiv.length; i++) {
     outerDiv[i].addEventListener('click', overlayImg1, false);
 }
 
-closeBtn.addEventListener(`click`, overlayImg1);
+if(closeBtn1) closeBtn1.addEventListener(`click`, overlayImg1);
 
 
 function overlayImg1(event) {
@@ -37,7 +37,7 @@ function overlayImg1(event) {
         generalDiv = document.querySelector('.' + event.currentTarget.id);
     }
     generalDiv.classList.toggle("overlay-pics-hidden");
-    closeBtn.classList.toggle("overlay-pics-hidden");
+   if(closeBtn1) closeBtn1.classList.toggle("overlay-pics-hidden");
     console.log(`click happen000`);
 };
 

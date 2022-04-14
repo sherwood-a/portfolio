@@ -13,26 +13,30 @@ const closeHiddenMenu = document.querySelector(`.ul-hidden-menu`);
 // Code for hidden menu
 
 //  Open/close hidden menu
-hamburgerMenu.addEventListener(`click`, hiddenMenu);
-closeBtn.addEventListener("click", hiddenMenu);
-closeHiddenMenu.addEventListener("click", hiddenMenu);
+if(hamburgerMenu) hamburgerMenu.addEventListener(`click`, hiddenMenu);
+if(closeBtn) closeBtn.addEventListener("click", hiddenMenu);
+if(closeHiddenMenu) closeHiddenMenu.addEventListener("click", hiddenMenu);
 
 
 function hiddenMenu() {
-  hidden.classList.toggle("burger-menu-hover");
-  hamburgerMenu.classList.toggle("hidden");
+  // hidden.classList.toggle("burger-menu-hover");
+  // hamburgerMenu.classList.toggle("hidden");
 }
 
 
 /////////////// Click on div ///////////////
 
-const divContainer = document.querySelector('.portfolio-items-container');
+const divContainer = document.querySelectorAll('.div-container');
 
-divContainer.addEventListener(`click`, clickChildrenA);
+for (var i = 0; i < divContainer.length; i++) {
+  divContainer[i].addEventListener('click', clickChildrenA, false);
+}
+
+// divContainer.addEventListener(`click`, clickChildrenA);
 
 function clickChildrenA(event) {
   // debugger
- var aSelector = event.target.querySelector('a');
+ let aSelector = event.target.querySelector('a');
  if(aSelector) {
   aSelector.click();
  }
