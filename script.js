@@ -32,8 +32,6 @@ for (var i = 0; i < divContainer.length; i++) {
   divContainer[i].addEventListener('click', clickChildrenA, false);
 }
 
-// divContainer.addEventListener(`click`, clickChildrenA);
-
 function clickChildrenA(event) {
   // debugger
  let aSelector = event.target.querySelector('a');
