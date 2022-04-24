@@ -30,6 +30,8 @@ for (var i = 0; i < outerDiv.length; i++) {
 }
 
 if(closeBtn1) closeBtn1.addEventListener(`click`, overlayImg1);
+document.addEventListener("keydown", overlayImg1);
+
 
 
 function overlayImg1(event) {
@@ -41,7 +43,11 @@ function overlayImg1(event) {
     console.log(`click happen000`);
 };
 
-function closeOverlay(){
+function closeOverlay(event){
     overlay.classList.add(`overlay-pics-hidden`);
     console.log(`click happen111`);
+    const key = event.key;
+    if (key === "Escape") {
+    overlay.classList.add(`overlay-pics-hidden`);
+    }
 }

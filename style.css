@@ -316,6 +316,7 @@ li:hover .hidden-menu-item::after{
     width: 27%;
     height: 428px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .portfolio-item > *{
@@ -545,7 +546,7 @@ button{
 .contact{
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 40vh;
     align-items: center;
 }
 
@@ -586,11 +587,9 @@ button{
 
 
 
-                    /********************************/
-                    /********************************/
+                    /****** GRAPHIC DESIGN PAGE ******/
 /**************** index-graphic-design-portfolio.html ****************/
-                    /********************************/
-                    /********************************/
+                   /********************************/
 
 
 
@@ -652,6 +651,7 @@ button{
     border-radius: 30px;
     margin-top: 5%;
     padding: 3%;
+    cursor: pointer;
 }
 
 .portfolio-item-containers:hover{
