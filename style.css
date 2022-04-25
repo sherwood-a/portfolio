@@ -404,9 +404,9 @@ li:hover .hidden-menu-item::after{
 
 .slider-items-contanier{
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 7% 20%;
+    padding: 7% 17%;
     border-radius: 30px;
-    height: 650px;
+    height: 900px;
 }
 
 .carousel-cell {
@@ -424,6 +424,9 @@ li:hover .hidden-menu-item::after{
 
 /**************** flickity ****************/
 
+.flickity-viewport{
+    height: 1000px !important;
+}
 
 .flickity-button-icon {
     fill: #FAC831;
@@ -453,7 +456,7 @@ li:hover .hidden-menu-item::after{
   }
 
   .flickity-page-dots{
-    bottom: 100px;
+    bottom: 30px;
 }
   
 .slider-items-contanier > *{
@@ -463,11 +466,19 @@ li:hover .hidden-menu-item::after{
 
 .experience-items{
     text-align: unset;
+    font-size: .8em;
 }
 
 .experience-items >*{
     padding-top: 5%;
 }
+
+.flickity-prev-next-button.previous {
+    left: -50px;
+  }
+  .flickity-prev-next-button.next {
+    right: -50px;
+  }
 
 
 /**************** Section-7 ****************/
