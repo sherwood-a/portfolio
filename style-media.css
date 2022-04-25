@@ -3,6 +3,9 @@
     .experience-items{
         font-size: 16px;
     }
+    .experience-items{
+        font-size: .8em;
+    }
 
 }
 
@@ -32,6 +35,21 @@
     .experience-items{
         font-size: 15px;
     }
+    .experience-items{
+        font-size: .8em;
+    }
+
+    .carousel-cell { width: 50%; }
+   
+}
+
+@media(max-width: 1000px){
+    .carousel-cell {
+        width: 70%;
+        /* height: 800px;
+        margin-right: 30px; */
+      }
+
 }
 
 
@@ -85,12 +103,14 @@
         margin: 10% auto;
     }
 
-    .carousel-cell {
-        width: 45%;
-        height: 800px;
-        margin-right: 20px;
-      }
+    .carousel-cell { width: 80%; }
 
+    .flickity-prev-next-button.previous {
+        left: -40px;
+      }
+      .flickity-prev-next-button.next {
+        right: -40px;
+      }
 }
 
 @media(max-width: 700px){
@@ -157,6 +177,13 @@
       .h2-section-8{
         margin-bottom: .1em;
     }
+
+    .flickity-prev-next-button.previous {
+        left: -30px;
+      }
+      .flickity-prev-next-button.next {
+        right: -30px;
+      }
 
 }
 
@@ -245,6 +272,13 @@
     .social-media-container{
         width: 400px;
     }
+
+    .flickity-prev-next-button.previous {
+        left: -5px;
+      }
+      .flickity-prev-next-button.next {
+        right: -5px;
+      }
 
 }
 
