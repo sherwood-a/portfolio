@@ -30,8 +30,13 @@ for (var i = 0; i < outerDiv.length; i++) {
 }
 
 if(closeBtn1) closeBtn1.addEventListener(`click`, overlayImg1);
-document.addEventListener("keydown", overlayImg1);
+document.addEventListener("keydown", closeOverlay)
 
+// document.addEventListener('keydown', function(event){
+// 	if(event.key === "Escape"){
+//         overlays.classList.toggle("overlay-pics-hidden")
+// 	}
+// });
 
 
 function overlayImg1(event) {
@@ -39,15 +44,18 @@ function overlayImg1(event) {
         generalDiv = document.querySelector('.' + event.currentTarget.id);
     }
     generalDiv.classList.toggle("overlay-pics-hidden");
-   if(closeBtn1) closeBtn1.classList.toggle("overlay-pics-hidden");
-    console.log(`click happen000`);
+    generalDiv.classList.add("active-overlay");
+    
+   if(event.currentTarget.id == '') {
+       document.querySelector('.active-overlay').classList.add("overlay-pics-hidden");
+       document.querySelector('.active-overlay').classList.remove("active-overlay");
+   }
 };
 
 function closeOverlay(event){
-    overlay.classList.add(`overlay-pics-hidden`);
-    console.log(`click happen111`);
     const key = event.key;
     if (key === "Escape") {
-    overlay.classList.add(`overlay-pics-hidden`);
+        document.querySelector('.active-overlay').classList.add("overlay-pics-hidden");
+        document.querySelector('.active-overlay').classList.remove("active-overlay");
     }
 }

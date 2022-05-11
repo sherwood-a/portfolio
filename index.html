@@ -74,29 +74,27 @@
 
                     <div class="portfolio-items-container portfolio-items-container-section-1">
                         
-                        <article class="portfolio-item graphic-design  div-container latest-projects-item">
+                        <div class="portfolio-item-container-outer portfolio-item graphic-design latest-projects-item"  id="batman">
                             <img src="/pics/section-1-batman.png" alt="icon" class="icon-section-2 icon-picture">
 
                                 <h3>Bat-Call</h3>
                                 <p class="portfolio-text">App Design<br>UX / UI</p>
-                                <!-- <p class="portfolio-text">UX / UI</p> -->
                                 <div class="button-conteiner">
-                                    <a href="/index-graphic-design-portfolio.html" target=”_blank” class="button-link yellow">Learn more</a>
+                                    <a href="#" class="button-link yellow">Learn more</a>
                                 </div>
                            
-                        </article>
+                        </div>
 
-                        <article class="portfolio-item graphic-design  div-container latest-projects-item">
+                        <div class="portfolio-item-container-outer portfolio-item graphic-design latest-projects-item" id="furniture-store-button">
                             <img src="/pics/section-1-furniture-art.png" alt="icon" class="icon-section-2 icon-picture">
 
                             <h3>Furniture Art</h3>
                             <p class="portfolio-text">Graphic Design<br>Logo / Branding</p>
-                            <!-- <p class="portfolio-text">Logo / Branding</p> -->
                             <div class="button-conteiner">
-                                <a href="/index-graphic-design-portfolio.html" target=”_blank” class="button-link yellow">Learn more</a>
+                                <a href="#" class="button-link yellow">Learn more</a>
                             </div>
 
-                        </article>
+                        </div>
 
                     </div>
 
@@ -104,7 +102,7 @@
           
             </div>
                     <!-- <img src="/pics/illustration-section-1.png" alt="Illustration-1" class="illustration-section-1"> -->
-                    <img src="/pics/section-1-background.png" alt="illustration" class="section-1-background">
+                    <!-- <img src="/pics/section-1-background.png" alt="illustration" class="section-1-background"> -->
                     <img src="/pics/section-1-background-mob.png" alt="illustration" class="section-1-background-mob">
         
         </section>
@@ -330,8 +328,28 @@
                 <a href="https://www.shutterstock.com/g/shervyd" target=”_blank”><img src="/pics/shutterstock-icon.png" alt="shuterstock" class="social-media"></a>
             </div>
         </section>
+
+
+
+        <div class="overlay overlay-pics-hidden furniture-store-button">
+            <img src="/pics/pic-portfolio-graohic-design/overlay-pics/overlay-furniture-store.png" alt="furniture-store" class="overlay-pic">
+            <a href="#" class="closeBtn">
+                <img src="/pics/close-btn.png" alt="closeBtn">
+            </a>
+        </div>
+
+
+        <div class="overlay overlay-pics-hidden batman">
+            <img src="/pics/pic-portfolio-graohic-design/overlay-pics/overlay-batman.png" alt="furniture-store" class="overlay-pic">
+            <a href="#" class="closeBtn">
+                <img src="/pics/close-btn.png" alt="closeBtn">
+            </a>
+        </div>
+
+
     </main>
     <script src="script.js"></script>
+    <script src="/script-graphic-design-portfolio-media.js"></script>
     <script>
         var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
