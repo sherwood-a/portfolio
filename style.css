@@ -14,6 +14,10 @@ html{
 
 body{
     margin: 0 auto;
+    background: url(/pics/section-1-background.png);
+    background-repeat: no-repeat;
+    background-position-y: 5%;
+    background-position-x: 90%;
 }
 
 main{
@@ -256,6 +260,7 @@ li:hover .hidden-menu-item::after{
 
 /**************** Section-1 ****************/
 
+
 .section-1-background{
     position: absolute;
     top: 0;
@@ -313,19 +318,6 @@ li:hover .hidden-menu-item::after{
     margin-top: 0;
 }
 
-
-
-
-
-/* .illustration-section-1{
-    width: 40vw;
-    position: absolute;
-    top: 2%;
-    right: 5%;
-} */
-
-
-
 .button-link{
     font-family: inherit;
     position: relative;
@@ -373,6 +365,7 @@ li:hover .hidden-menu-item::after{
     height: 428px;
     border-radius: 30px;
     cursor: pointer;
+    background-color: #ffffff;
 }
 
 .portfolio-item > *{

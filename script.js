@@ -34,7 +34,7 @@ for (var i = 0; i < divContainer.length; i++) {
 
 function clickChildrenA(event) {
   // debugger
- let aSelector = event.target.querySelector('a');
+ let aSelector = event.currentTarget.querySelector('a');
  if(aSelector) {
   aSelector.click();
  }
