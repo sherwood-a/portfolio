@@ -18,6 +18,7 @@ body{
     background-repeat: no-repeat;
     background-position-y: 5%;
     background-position-x: 90%;
+    background-size: 40vw;
 }
 
 main{
@@ -260,13 +261,11 @@ li:hover .hidden-menu-item::after{
 
 /**************** Section-1 ****************/
 
-
-.section-1-background{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+.section-1{
+    /* border: 1px red solid; */
+    width: 100%;
 }
+
 
 .section-1-background-mob{
     display: none;
@@ -279,6 +278,10 @@ li:hover .hidden-menu-item::after{
     align-items: center;
     margin-top: 10em;
     /* border: 1px red solid; */
+}
+
+.icon-section-1{
+    width: 60%;
 }
 
 
@@ -296,13 +299,18 @@ li:hover .hidden-menu-item::after{
 }
 
 .latest-projects-item{
+    /* border: 1px red solid; */
     width: 45% !important;
+    height: 25vw !important;
+}
+
+.portfolio-text-latest{
+    padding: 0 !important;
 }
 
 .h5-latest-projects{
     font-weight: 300;
 }
-
 
 .text-conteiner-section-1{
     display: flex;
