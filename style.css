@@ -21,6 +21,10 @@ body{
     background-size: 40vw;
 }
 
+.body-1{
+    background: none !important;
+}
+
 main{
     width: 80%;
     margin: 0 auto;
