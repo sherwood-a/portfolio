@@ -19,8 +19,8 @@ if(closeHiddenMenu) closeHiddenMenu.addEventListener("click", hiddenMenu);
 
 
 function hiddenMenu() {
-  // hidden.classList.toggle("burger-menu-hover");
-  // hamburgerMenu.classList.toggle("hidden");
+  hidden.classList.toggle("burger-menu-hover");
+  hamburgerMenu.classList.toggle("hidden");
 }
 
 

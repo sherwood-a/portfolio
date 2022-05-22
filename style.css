@@ -702,6 +702,7 @@ button{
 .button-back{
     display: flex;
     align-items: center;
+    margin-left: 2vw;
 }
 
 .button-back-bottom{

@@ -57,3 +57,23 @@
         height: 4.5em;
     }
 }
+
+
+@media(max-width: 500px){
+    body{
+        margin-top: 5vh;
+    }
+
+    .heading-2{
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+   .heading-pic{
+       display: none;
+   }
+
+   .portfolio-item-containers{
+       margin-top: 5vh;
+   }
+}

@@ -322,6 +322,10 @@
         font-size: 1.5em;
     }
 
+    .text-conteiner-section-1{
+        width: 90vw;
+    }
+
     .heading-inner-container{
         height: 4.5em;
     }
@@ -339,6 +343,12 @@
 
     .tools-icons-container{
         margin: 0 10%;
+    }
+
+    .section-3-text-container{
+        border-top: 1px solid #FAC831;
+        border-bottom: 1px solid #FAC831;
+        padding-bottom: 7vh;
     }
 
     /* .flickity-page-dots{
