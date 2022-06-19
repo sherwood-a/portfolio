@@ -97,6 +97,9 @@ a{
    text-decoration: underline;
 }
 
+.subheading{
+
+}
 
 
 
@@ -349,6 +352,15 @@ li:hover .hidden-menu-item::after{
 .button-conteiner:hover .button-link::after{
     width: 100%;
     left: 0;
+}
+
+.subheading{
+    font-size: .8em;
+    color: #414141;
+}
+
+.subheading1{
+    margin-top: -1% !important;
 }
 
 
